@@ -1,0 +1,191 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+:root {
+    --dark-gray: hsl(0, 0%, 63%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+    --mobile-view: 375px;
+    --desktop-view: 1440px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.h-center {
+    align-items: center;
+}
+
+.v-center {
+    justify-content: center;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    max-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+main {
+    height: 100vh;
+}
+
+.top {
+    height: 65%;
+}
+
+.bottom {
+    height: 35%;
+}
+
+.header img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+.header{
+    width: 73.4%;
+}
+main{
+    width: 100%;
+}
+.inline_section{
+    width: 100%;
+}
+.header>nav {
+    top: 30px;
+    left: 30px;
+}
+
+.header>nav>* {
+    margin-block: 0;
+    color: white;
+
+}
+.header>nav > h3{
+    font-size: 1.5em;
+}
+.header>nav>ul {
+    list-style: none;
+}
+
+.header>nav>ul>li {
+    margin-inline: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+.header>nav>ul>li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    bottom: -3px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.1s ease-in-out;
+}
+.header>nav>ul>li:hover::after{
+    width: 100%;
+}
+.top .content-box {
+    width: 40%;
+    position: relative;
+}
+.low-detail{
+    max-width: 1080px;
+}
+.content-box .content {
+    position: relative;
+    margin-inline: 10%;
+    min-inline-size: 254px;
+}
+
+.content-box .content p {
+    color: var(--dark-gray);
+    letter-spacing: 0.08em;
+}
+
+.content-box .content h1 {  
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 0.01em;
+}
+
+.content-box .content h3 {
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.content-box .content h3:hover {
+    color: var(--dark-gray);
+}
+
+.content-box .content h3:hover>svg>path {
+    fill: var(--dark-gray);
+}
+
+.content-box .slide-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.content-box .slide-buttons>button {
+    --width: 60px;
+    width: var(--width);
+    height: var(--width);
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+.content-box .slide-buttons>button:hover {
+    background-color: var(--very-dark-gray);
+}
